@@ -1,0 +1,8 @@
+.error {
+  border: 2px solid rgb(197, 62, 0);
+}
+.validation_errmsg,
+.phnum_errmsg,
+.password_errmsg {
+  color: rgb(165, 42, 42);
+}

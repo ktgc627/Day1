@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Training Day3</title>
+  <link rel="stylesheet" href="./style.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+  <form class="userdetail" action="">
+    <label for="fname">First name:</label>
+    <input type="text" class="form_val" id="fname" name="fname" maxlength="15" placeholder="Enter your first name " required></br></br>
+    <label for="lname">Last name:</label>
+    <input type="text"  class="form_val" id="lname" name="lname" value="" maxlength="7" placeholder="Enter your last name " required></br></br>
+    <label for="email">Email:</label>
+    <input type="text"  class="form_val" id="email" name="email" value="" placeholder="Enter your emial id ">
+    <span class="validation_errmsg d-none">Enter valid emial address </span></br></br>
+    <label for="phone">Phone Number:</label>
+    <input type="text" class="form_val" id="phnum" name="phnum" value="" placeholder="Enter your phone number" required>
+    <span class="phnum_errmsg d-none">Enter valid phone number </span></br></br>
+    <label for="password">Password:</label>
+    <input type="password" class="form_val" id="password" name="password" value="" placeholder="Enter your password"  required>
+    <span class="password_errmsg d-none">Password must contain at least one letter, at least one number, and be longer than six charaters.</span></br></br>
+    <input type="submit" class="formSubmit" id="formSubmit" name="formSubmit" value="Submit">  
+  </form>
+  <div class="success_screen d-none">
+    <h1 >Hi <span class="firstname"></span></h1>
+    <p><span>we have recieved your data and will get back to you soon!</span></p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
